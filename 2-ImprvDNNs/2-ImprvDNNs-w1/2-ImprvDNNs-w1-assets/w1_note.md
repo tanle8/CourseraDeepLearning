@@ -19,4 +19,4 @@
 
     Implementation notes:
 
-        - Don't use in training, 
+        - Don't use in training - only to debug
