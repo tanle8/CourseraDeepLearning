@@ -83,7 +83,7 @@ def initialize_parameters(layer_dims):
         parameters['b' + str(l)] = np.zeros((layer_dims[l], 1))
         
         assert(parameters['W' + str(l)].shape == layer_dims[l], layer_dims[l-1])
-        assert(parameters['W' + str(l)].shape == layer_dims[l], 1)
+        assert(parameters['b' + str(l)].shape == layer_dims[l], 1)
 
         
     return parameters
