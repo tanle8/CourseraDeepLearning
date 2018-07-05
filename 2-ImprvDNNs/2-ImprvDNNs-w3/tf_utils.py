@@ -5,7 +5,7 @@ import math
 
 def load_dataset():
     """
-
+    Load dataset
     """
     
     train_dataset = h5py.File('datasets/train_signs.h5', "r")
