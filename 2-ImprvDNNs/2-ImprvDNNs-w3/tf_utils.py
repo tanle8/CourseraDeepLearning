@@ -4,6 +4,10 @@ import tensorflow as tf
 import math
 
 def load_dataset():
+    """
+
+    """
+    
     train_dataset = h5py.File('datasets/train_signs.h5', "r")
     train_set_x_orig = np.array(train_dataset["train_set_x"][:]) # your train set features
     train_set_y_orig = np.array(train_dataset["train_set_y"][:]) # your train set labels
@@ -66,7 +70,10 @@ def convert_to_one_hot(Y, C):
 
 
 def predict(X, parameters):
+    """
     
+    """
+
     W1 = tf.convert_to_tensor(parameters["W1"])
     b1 = tf.convert_to_tensor(parameters["b1"])
     W2 = tf.convert_to_tensor(parameters["W2"])
